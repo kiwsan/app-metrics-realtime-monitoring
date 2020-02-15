@@ -1,9 +1,11 @@
  
 #!/bin/bash
 
-sudo mkdir -p /volumes/grafana
+sudo mkdir -p /volumes
 docker-compose up -d
-sudo chown -R 472:472 /volumes/grafana
+#sudo chown -R 777 volumes
+sudo chown -R 472:472 volumes
+sudo chown -R 472:472 volumes/influxdb
 
 echo "Grafana: http://127.0.0.1:3001 - admin/admin"
 
