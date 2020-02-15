@@ -22,7 +22,6 @@ namespace HealthTracking
         private class HealthCheckResult
         {
             public string Status { get; set; }
-            public int Key { get; set; }
             public IEnumerable<HealthTrackingResult> Data { get; set; }
         }
 

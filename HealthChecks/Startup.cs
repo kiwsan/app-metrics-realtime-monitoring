@@ -113,7 +113,6 @@ namespace HealthChecks
             {
                 var result = JsonConvert.SerializeObject(new
                 {
-                    key = rpt.Status,
                     status = rpt.Status.ToString(),
                     data = rpt.Entries.Select(e => new
                     {
